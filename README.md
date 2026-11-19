@@ -15,7 +15,7 @@ pip install -e .            # or ".[wandb]" for Weights & Biases logging
 
 ## Using Persistent SAE
 
-Trained Persistent SAEs from our paper can be found on **[Hugging Face](https://huggingface.co/HF_REPO_PLACEHOLDER)**.
+Trained Persistent SAEs from our paper can be found on **[Hugging Face](https://huggingface.co/haoyanl78/persistent-sparse-autoencoders)**.
 
 ```python
 import torch
