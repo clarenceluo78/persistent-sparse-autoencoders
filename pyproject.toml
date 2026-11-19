@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "persistent-sae"
+version = "0.1.0"
+description = "Persistent sparse autoencoders for learning feature timescales in language models."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.1",
+    "transformers>=4.44",
+    "datasets>=2.18",
+    "numpy",
+    "tqdm",
+    # Decompresses the streamed Pile shards.
+    "zstandard",
+]
+
+[project.optional-dependencies]
+wandb = ["wandb"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
